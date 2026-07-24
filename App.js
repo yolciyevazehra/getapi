@@ -56,7 +56,7 @@ function getCategories() {
         .then(categories => {
             categories.forEach(category => {
                 categorylist.innerHTML += `
-                    <li data-category="${category}" class="category-item border border-slate-300 bg-slate-800 text-white rounded-md px-4 py-2 cursor-pointer hover:bg-slate-700 transition-colors capitalize">
+                    <li data-category="${category}" class="category-item border border-slate-300 rounded-md px-4 py-2 cursor-pointer capitalize">
                         ${category}
                     </li>
                 `;
